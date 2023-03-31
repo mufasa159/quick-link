@@ -1,7 +1,7 @@
 const form = document.getElementById("user-input");
 const alert_success = document.getElementById("alert-success");
 const alert_error = document.getElementById("alert-error");
-const storage = document.getElementById("storage");
+const storage = document.getElementById("storage-container");
 storage.style.display = 'none';
 
 form.addEventListener("submit", (event) => {
@@ -17,6 +17,7 @@ form.addEventListener("submit", (event) => {
    alert_success.style.display = 'block';
    document.getElementById("user-input").reset();
    storage.style.display = 'none';
+   storage.innerHTML = "";
 });
 
 const getLinks = document.getElementById('get-links');
@@ -25,16 +26,14 @@ getLinks.addEventListener('click', getQuickLinks);
 
 function getQuickLinks() {
    chrome.storage.local.get(['redirect_link'], (result) => {
-      const container = document.querySelector('.storage-container');
+      if (storage.style.display != 'none') {
+         storage.innerHTML = "";
+      }
       for (let key in result.redirect_link) {
          const link = document.createElement('p');
-         if (storage.style.display != 'none') {
-            container.innerHTML = "";
-         }
          link.textContent = key + " : " + result.redirect_link[key];
-         container.appendChild(link);
+         storage.appendChild(link);
       }
       storage.style.display = 'block';
    });
 }
-

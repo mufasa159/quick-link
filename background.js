@@ -1,10 +1,15 @@
 let redirect_link = {}
+chrome.storage.local.get(['redirect_link'], (result) => {
+  if (result.redirect_link !== undefined) {
+    redirect_link = result.redirect_link;
+  }
+});
 
 chrome.omnibox.onInputEntered.addListener((text) => {
   if (redirect_link[text] !== undefined){
     chrome.tabs.update({url: redirect_link[text]});
   } else {
-    chrome.tabs.update({url: "./data.html"});
+    chrome.tabs.update({url: "./error.html"});
   }
 });
 
