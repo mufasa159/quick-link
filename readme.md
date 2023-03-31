@@ -12,3 +12,6 @@ A lightweight and simple link management extension for Chrome based browsers.
 
 https://user-images.githubusercontent.com/40151627/229023784-61e70d51-0141-4060-9e5a-b312c8f4bcda.mp4
 
+### Notice
+
+Check this [thread](https://stackoverflow.com/a/37105645/12916568) for more details on when stored data is deleted.

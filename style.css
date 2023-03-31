@@ -73,3 +73,7 @@ a {
 #storage {
    margin-top: 5px;
 }
+
+small a {
+   font-size: 11px;
+}

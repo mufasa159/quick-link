@@ -25,7 +25,7 @@ getLinks.addEventListener('click', getQuickLinks);
 
 
 function getQuickLinks() {
-   chrome.storage.local.get(['redirect_link'], (result) => {
+   chrome.storage.sync.get(['redirect_link'], (result) => {
       if (storage.style.display != 'none') {
          storage.innerHTML = "";
       }

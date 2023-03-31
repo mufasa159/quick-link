@@ -1,5 +1,5 @@
 let redirect_link = {}
-chrome.storage.local.get(['redirect_link'], (result) => {
+chrome.storage.sync.get(['redirect_link'], (result) => {
   if (result.redirect_link !== undefined) {
     redirect_link = result.redirect_link;
   }
@@ -19,7 +19,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const key = data[0];
     const url = data[1];
     redirect_link[key] = url;
-    chrome.storage.local.set({redirect_link});
+    chrome.storage.sync.set({redirect_link});
     sendResponse({ message: "Form submitted successfully!" });
   }
 });
