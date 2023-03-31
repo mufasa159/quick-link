@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quick Link</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="./background.js"></script>
+   <script defer src="./popup.js"></script>
+</head>
+<body>
+   <h2>Q-Links</h2>
+   <p>Add a new link to local storage</p>
+   
+   <form id="user-input" method="POST" enctype="multipart/form-data">
+      <input type="text" name="quick-link-key" placeholder="Quick Text" required/><br/> 
+      <input type="text" name="quick-link-url" placeholder="Destination URL" required/><br/>
+      <div id="alert-success">
+         <p>Q-link added successfully.</p>
+      </div>
+      <div id="alert-error">
+         <p>Something went wrong</p>
+      </div>
+      <button type="submit" id="submit-button">Create</button>
+    </form>
+   <br/>
+   <!-- <a href="./data.html">Edit</a><br/> -->
+   <a id="get-links">View Storage</a><br/>
+   <section id="storage">
+      <div class="storage-container"></div>
+   </section>
+   <br/>
+   <small>Erasing browser data or refreshing/re-installing extension will result in deletion of all stored values.</small>
+</body>
+</html>
