@@ -25,15 +25,27 @@ getLinks.addEventListener('click', getQuickLinks);
 
 
 function getQuickLinks() {
-   chrome.storage.sync.get(['redirect_link'], (result) => {
-      if (storage.style.display != 'none') {
-         storage.innerHTML = "";
-      }
-      for (let key in result.redirect_link) {
-         const link = document.createElement('p');
-         link.textContent = key + " : " + result.redirect_link[key];
-         storage.appendChild(link);
-      }
-      storage.style.display = 'block';
-   });
+   if (getLinks.innerHTML == "Hide Links") {
+      getLinks.innerHTML = "View Links";
+      storage.style.display != 'none';
+      storage.innerHTML = "";
+   } else {
+      getLinks.innerHTML = "Hide Links";
+      chrome.storage.sync.get(['redirect_link'], (result) => {
+         if (storage.style.display != 'none') {
+            storage.innerHTML = "";
+         }
+         for (let key in result.redirect_link) {
+            const link = document.createElement('p');
+            const bold = document.createElement('span');
+            const breakLine = document.createElement('br');
+            bold.textContent = key;
+            link.textContent = result.redirect_link[key];
+            link.prepend(breakLine);
+            link.prepend(bold);
+            storage.appendChild(link);
+         }
+         storage.style.display = 'block';
+      });
+   }
 }

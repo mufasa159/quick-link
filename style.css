@@ -21,7 +21,7 @@ form {
 input {
    padding: 5px;
    border: 1px solid #CCCCCC;
-   border-radius: 3px;
+   border-radius: 0px;
    margin-bottom: -1px;
    min-width: 300px;
    background-color: transparent;
@@ -30,7 +30,7 @@ input {
 
 input::after, input:focus {
    outline: none;
-   border-left: 3px solid #262626;
+   border-left: 3px solid #da4162;
    min-width: 298px;
 
 }
@@ -39,10 +39,15 @@ input::placeholder{
    color: #a4a4a4;
 }
 
+.title {
+   color: #da4162;
+}
+
 button {
    margin-top: 18px;
    padding: 6px 19px;
-   background-color: #cccccc;
+   background-color: #da4162;
+   color: white;
    border: none;
    border-radius: 3px;
    margin-bottom: 10px;
@@ -70,12 +75,24 @@ a {
    color: #bc1818;
 }
 
-#storage {
+#storage-container {
    margin-top: 5px;
+   overflow-wrap: anywhere;
+   word-break: break-all;
 }
 
 small a {
    font-size: 11px;
    color: black;
    text-decoration: underline;
+}
+
+#storage-container span {
+   font-weight: 700;
+   color: #da4162;
+}
+
+#storage-container p {
+   margin-bottom: 5px;
+   font-size: 12px;
 }
