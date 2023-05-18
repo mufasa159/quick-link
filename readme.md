@@ -10,7 +10,7 @@ A lightweight and simple link management extension for Chrome based browsers.
 
 ### Demo
 
-https://user-images.githubusercontent.com/40151627/229023784-61e70d51-0141-4060-9e5a-b312c8f4bcda.mp4
+https://github.com/mufasa159/quick-link/assets/40151627/30419a72-5bda-4490-be73-964d97fcf36b  
 
 ### Notice
 
