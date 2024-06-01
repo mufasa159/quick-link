@@ -2,12 +2,6 @@
 
 A lightweight and simple link management extension for Chrome based browsers.
 
-
-
-[<img alt="Chrome Web Store" width="200px" style="border-radius:5px;" src="https://github.com/mufasa159/quick-link/assets/40151627/bde675a7-9144-4b30-bac2-efcf855ce758"/>](https://chrome.google.com/webstore/detail/quick-link/napbhpnpfhkeaemdbclbncchalbialkc)
-  
-[Chrome Web Store](https://chrome.google.com/webstore/detail/quick-link/napbhpnpfhkeaemdbclbncchalbialkc)  
-
 ### Usage
 
 1. Install the extension

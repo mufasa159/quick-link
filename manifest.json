@@ -1,14 +1,16 @@
 {
   "name": "Quick Link",
-  "version": "2.0",
+  "version": "3.0",
   "author": "Mufasa A. (mufasa159)",
   "manifest_version": 3,
   "description": "Quickly access links using shortened text on your browser's search bar.",
-  "omnibox": { "keyword" : "q" },
+  "omnibox": {
+    "keyword": "q"
+  },
   "background": {
     "service_worker": "background.js"
   },
-  "action":{
+  "action": {
     "default_popup": "index.html",
     "default_title": "Quick Link"
   },
@@ -18,5 +20,7 @@
     "48": "assets/logo_48px.png",
     "128": "assets/logo_128px.png"
   },
-  "permissions": [ "storage", "tabs" ]
+  "permissions": [
+    "storage"
+  ]
 }

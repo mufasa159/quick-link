@@ -5,7 +5,8 @@ body {
    min-width: 300px;
 }
 
-h2, p {
+h2,
+p {
    margin: 0;
    padding: 0;
 }
@@ -28,14 +29,15 @@ input {
    padding: 6px 8px;
 }
 
-input::after, input:focus {
+input::after,
+input:focus {
    outline: none;
    border-left: 3px solid #da4162;
    min-width: 298px;
 
 }
 
-input::placeholder{
+input::placeholder {
    color: #a4a4a4;
 }
 
@@ -61,7 +63,8 @@ a {
    cursor: pointer;
 }
 
-#alert-success, #alert-error {
+#alert-success,
+#alert-error {
    margin: 5px 0px 0px 0px;
    font-size: 10px;
    display: none;
@@ -87,12 +90,46 @@ small a {
    text-decoration: underline;
 }
 
-#storage-container span {
-   font-weight: 700;
-   color: #da4162;
+.top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
 }
 
-#storage-container p {
+.edit-button,
+.delete-button {
+   margin: 0px 0px 7px 5px;
+   background-color: transparent;
+   color: black;
+   border: 1px solid #cdcdcd;
+   border-radius: 3px;
+   cursor: pointer;
+   padding: 2px 5px;
+   font-size: 11px;
+   font-weight: 300;
+}
+
+.link-item {
    margin-bottom: 5px;
    font-size: 12px;
+}
+
+.link-key {
+   color: #da4162;
+   font-weight: 700;
+}
+
+.link-url {
+   color: black;
+   font-weight: 400;
+}
+
+.strike-through .link-key,
+.strike-through .link-url {
+   text-decoration: line-through;
+}
+
+#edit-form {
+   margin-top: 15px;
 }
