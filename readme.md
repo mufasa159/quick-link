@@ -10,4 +10,4 @@ A lightweight and simple link management extension for Chrome based browsers.
 
 ### Demo
 
-https://github.com/mufasa159/quick-link/assets/40151627/a1df981d-18c4-4746-9305-c0369cc27d0b  
+https://github.com/mufasa159/quick-link/assets/40151627/060e392f-73db-4337-abc9-cfefb3dbe701
