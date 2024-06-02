@@ -5,6 +5,22 @@ body {
    min-width: 300px;
 }
 
+body::-webkit-scrollbar {
+   width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+   background: #E3E3E3;
+   border-left: 1px solid #CDCDCD;
+}
+
+body::-webkit-scrollbar-thumb {
+   color: #DA4162;
+   border-radius: 4px;
+   background-color: #DA4162;
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 h2,
 p {
    margin: 0;
@@ -12,6 +28,15 @@ p {
 }
 
 p {
+   font-size: 14px;
+}
+
+ul {
+   margin: 5px 0px;
+   padding-inline-start: 20px;
+}
+
+li {
    font-size: 14px;
 }
 
@@ -86,8 +111,8 @@ a {
 
 small a {
    font-size: 11px;
-   color: black;
-   text-decoration: underline;
+   color: #1d91fd;
+   text-decoration: none;
 }
 
 .top {

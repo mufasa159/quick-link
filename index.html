@@ -15,14 +15,10 @@
 
    <!-- Create Form -->
    <form id="user-input" method="POST" enctype="multipart/form-data">
-      <input type="text" name="quick-link-key" placeholder="Quick Text" required /><br />
+      <input type="text" name="quick-link-key" placeholder="Keyword" required /><br />
       <input type="text" name="quick-link-url" placeholder="Destination URL" required /><br />
-      <div id="alert-success">
-         <p>Q-link added successfully.</p>
-      </div>
-      <div id="alert-error">
-         <p>Something went wrong</p>
-      </div>
+      <div id="alert-success"></div>
+      <div id="alert-error"></div>
       <button type="submit" id="submit-button">Create</button>
    </form>
 
@@ -32,10 +28,10 @@
    <div id="storage-container"></div>
 
    <!-- Edit Form -->
-   <form id="edit-form" method="POST" style="display: none;">
-      <input type="text" name="edit-link-key" placeholder="New Quick Text" required /><br />
+   <form id="edit-form" method="POST" style="display: none;" enctype="multipart/form-data">
+      <input type="text" name="edit-link-key" placeholder="New Keyword" required /><br />
       <input type="text" name="edit-link-url" placeholder="New Destination URL" required /><br />
-      <button type="submit" id="edit-button">Save</button>
+      <button type="submit" id="save-edit-button">Save</button>
       <button type="button" id="cancel-edit-button">Cancel</button>
    </form>
 
@@ -53,12 +49,16 @@
       </div>
    </template>
 
+   <!-- Extension Information -->
    <br />
-   <small>
-      <a href="https://stackoverflow.com/a/37105645/12916568" target="_blank">Click here</a> for more details on
-      when stored data is deleted.
-   </small>
+   <p>
+      <small>
+         Curious when stored data is deleted?
+         <a href="./information.html">Learn More</a>
+      </small>
+   </p>
 
+   <!-- Popup JavaScript -->
    <script src="popup.js"></script>
 </body>
 
