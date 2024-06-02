@@ -11,7 +11,3 @@ A lightweight and simple link management extension for Chrome based browsers.
 ### Demo
 
 https://github.com/mufasa159/quick-link/assets/40151627/a1df981d-18c4-4746-9305-c0369cc27d0b  
-
-### Notice
-
-Check this [thread](https://stackoverflow.com/a/37105645/12916568) for more details on when stored data is deleted.
